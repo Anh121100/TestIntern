@@ -1,0 +1,196 @@
+@import url(./base.css);
+
+#header {
+  background-image: url("./image/banner.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 768px;
+  background-size: cover;
+}
+#header .menu {
+  height: 110px;
+}
+#header .menu .navbar {
+  width: 70%;
+}
+.menu .navbar .name-shop {
+  font-size: 22px;
+  text-decoration: none;
+  color: #1f1e1d;
+}
+.menu .navbar .navbar-item {
+  display: flex;
+}
+.navbar .navbar-item li {
+  list-style: none;
+  margin-right: 20px;
+}
+.navbar .navbar-item li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+}
+#header .menu .header-icon {
+  font-size: 22px;
+  color: #333;
+  display: flex;
+}
+.menu .header-icon i {
+  margin-left: 20px;
+}
+#header .hero {
+  margin-bottom: 66px;
+  text-align: center;
+}
+#header .hero h1 {
+  color: #fff;
+  line-height: 38px;
+  font-size: 29px;
+  font-weight: bold;
+}
+#header .hero button {
+  padding: 15px 96px;
+  border: 2px #fff solid;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 30px;
+}
+#mobile {
+  display: none;
+}
+
+/* Discover more */
+#discover-more h3 {
+  margin: 32px 0 28px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f1e1d;
+}
+.shop-container .shop-item {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.shop-container .shop-item a {
+  color: #1f1e1d;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 18px 0 62px 0;
+}
+
+/* Explore */
+hr {
+  background-color: rgb(35, 34, 34, 16%);
+}
+#explore h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 44px;
+}
+#explore .category {
+  margin: 14px 0 42px 0;
+}
+#explore .category button {
+  border: 1px #232222 solid;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 12px 10px;
+  margin-right: 10px;
+}
+
+/* Sidebar */
+#sidebar {
+    padding: 22px 0;
+  text-align: center;
+}
+#sidebar .sidebar-link {
+  text-decoration: none;
+  color: #232222;
+  font-size: 12px;
+}
+
+/* Footer */
+#footer {
+  padding: 30px 0;
+  text-align: center;
+}
+#footer .copyright {
+  font-size: 12px;
+}
+
+/* Start Media Query */
+@media (max-width: 768px) {
+  .section-p1 {
+    padding: 0 20px;
+  }
+  #header {
+    background-image: url("./image/banner-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  #header .menu {
+    height: 80px;
+  }
+  .navbar-item,
+  .header-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 200px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.4s;
+  }
+  #mobile {
+    display: flex;
+  }
+  #mobile i {
+    font-size: 24px;
+    margin-left: 22px;
+  }
+
+  #header .hero h1 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  .shop-container {
+    flex-wrap: wrap;
+    
+    padding-bottom: 30px;
+  }
+  .shop-container .shop-item {
+    width: 48%;
+  }
+  
+  .shop-container .shop-item a{
+    margin: 30px 0px;
+  }
+}
+@media (max-width: 375px) {
+  #header {
+    background-position: 50%;
+    height: 80vh;
+  }
+  .shop-container .shop-item {
+    width: 100%;
+  }
+  .shop-container .shop-item a{
+    margin: 20px 0px;
+  }
+  #explore .category button {
+    margin-bottom: 10px;
+  }
+  .sidebar-link {
+    display: block;
+    margin: 20px 0;
+  }
+
+}
